@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mp3_player.HelloController">
+   <children>
+      <ImageView fx:id="myimage" fitHeight="235.0" fitWidth="696.0" layoutX="-12.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images.jpg" />
+         </image>
+      </ImageView>
+
+      <Label fx:id="songLabel" alignment="CENTER" layoutX="-2.0" layoutY="2.0" prefHeight="126.0" prefWidth="682.0" text="MP3 PLAYER" textFill="#150707">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font></Label>
+      <ProgressBar fx:id="songProgressBar" layoutX="1.0" layoutY="137.0" prefHeight="18.0" prefWidth="682.0" progress="0.0" />
+      <Button fx:id="playMedia" layoutY="156.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="63.0" prefWidth="82.0" text="PLAY">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="pauseMedia" layoutX="82.0" layoutY="156.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="63.0" prefWidth="74.0" text="PAUSE">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetMedia" layoutX="156.0" layoutY="156.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="63.0" prefWidth="74.0" text="RESET">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousMedia" layoutX="230.0" layoutY="156.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="63.0" prefWidth="106.0" text="PREVIOUS">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="b5" layoutX="336.0" layoutY="156.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="63.0" prefWidth="82.0" text="NEXT">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font>
+      </Button>
+      <Slider fx:id="volumeSlider" layoutX="511.0" layoutY="166.0" prefHeight="30.0" prefWidth="170.0" />
+      <ComboBox fx:id="speedBox" layoutX="418.0" layoutY="156.0" onAction="#changeSpeed" prefHeight="63.0" prefWidth="91.0" promptText="SPEED" />
+      <Label layoutX="543.0" layoutY="197.0" text="VOLUME SLIDER" textFill="#f4f2f2">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
